@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+const mix = require("laravel-mix");
 
 /*
  |--------------------------------------------------------------------------
@@ -11,7 +11,41 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
+mix.js("resources/js/app.js", "public/js")
+    .postCss("resources/css/app.css", "public/css", [
         //
-    ]);
+    ])
+    .copy("node_modules/admin-lte/plugins/jquery/jquery.min.js", "public/js")
+    .copy(
+        "node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js",
+        "public/js"
+    )
+    .copy(
+        "node_modules/admin-lte/plugins/jquery-ui/jquery-ui.min.js",
+        "public/js"
+    )
+    .copy(
+        "node_modules/admin-lte/plugins/fullcalendar/main.min.js",
+        "public/js/fullcalendar.min.js"
+    )
+    .copy("node_modules/admin-lte/plugins/moment/moment.min.js", "public/js")
+    .copy(
+        "node_modules/admin-lte/plugins/fullcalendar-daygrid/main.min.js",
+        "public/js/daygrid.min.js"
+    )
+    .copy(
+        "node_modules/admin-lte/plugins/fullcalendar-timegrid/main.min.js",
+        "public/js/timegrid.min.js"
+    )
+    .copy(
+        "node_modules/admin-lte/plugins/fullcalendar-interaction/main.min.js",
+        "public/js/interaction.min.js"
+    )
+    .copy(
+        "node_modules/admin-lte/plugins/fullcalendar-bootstrap/main.min.js",
+        "public/js/bootstrap.min.js"
+    );
+
+if (mix.inProduction()) {
+    mix.version();
+}

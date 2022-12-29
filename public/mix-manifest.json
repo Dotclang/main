@@ -1,0 +1,13 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/js/jquery.min.js": "/js/jquery.min.js",
+    "/js/bootstrap.bundle.min.js": "/js/bootstrap.bundle.min.js",
+    "/js/jquery-ui.min.js": "/js/jquery-ui.min.js",
+    "/js/fullcalendar.min.js": "/js/fullcalendar.min.js",
+    "/js/moment.min.js": "/js/moment.min.js",
+    "/js/daygrid.min.js": "/js/daygrid.min.js",
+    "/js/timegrid.min.js": "/js/timegrid.min.js",
+    "/js/interaction.min.js": "/js/interaction.min.js",
+    "/js/bootstrap.min.js": "/js/bootstrap.min.js"
+}
